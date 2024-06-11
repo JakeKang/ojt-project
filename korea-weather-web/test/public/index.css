@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4da2db;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 350px;
+    height: 450px;
+    text-align: left;
+    background-color: #78c5ef;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border-radius : 10px;
+}
+
+#cardTop {
+    top: 0;
+}
+
+#cardMain {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 27%;
+}
+
+#location {
+    position: relative;
+    font-size: 26px;
+    left: 10px;
+    top: 10px;
+}
+
+#updating {
+    position: relative;
+    font-size : 16px;
+    left: 15px;
+    top: 7px;
+}
+
+#weather {
+    font-size: 34px;
+}
+
+#temp {
+    font-size: 64px;
+}
+
+#cardBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    list-style-type: none;
+    color: #fff;
+    text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#cardBottom > li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#view {
+    position: absolute;
+    border : 1px solid #fff;
+    background-color: #3498db;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+}
+
+
+#view:hover {
+    cursor: pointer;
+    background-color: #2a83be;
+}
+
+#view:focus {
+    outline: none;
+}

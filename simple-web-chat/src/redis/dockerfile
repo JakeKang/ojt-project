@@ -1,0 +1,17 @@
+FROM node:12-slim
+
+RUN mkdir -p /app
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+ENV NODE_ENV development
+
+EXPOSE 4884
+
+CMD ["yarn", "start"]

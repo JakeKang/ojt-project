@@ -1,0 +1,49 @@
+{
+  "name": "simple-web-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TestProject #2 - Simple Web Chat",
+  "scripts": {
+    "build": "yarn lint;babel ./src -d ./build",
+    "start": "yarn build;yarn browserify;node ./build/index.js",
+    "dev": "nodemon --exec 'eslint src --color && babel-node ./src'",
+    "lint": "eslint src --color",
+    "browserify": "browserify ./build/public/assets/js/chat.js -o ./build/public/assets/js/bundle.js",
+    "test": "mocha -r @babel/register"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "express": "^4.17.1",
+    "package.json": "^2.0.1",
+    "socket.io": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "browserify": "^16.5.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "mocha": "^8.1.2",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "engines": {
+    "node": ">= 10.15.0"
+  }
+}

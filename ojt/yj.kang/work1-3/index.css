@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size : 40px;
+    margin: 10px;
+    padding: 0;
+}
+
+#buttonContainer {
+    margin: 10px;
+}
+
+
+#container {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    background-color: #ececec;
+    width: 400px;
+    height: auto;
+}
+
+#clock {
+    font-size : 32px;
+}
+
+#toggle {
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #1489f7;
+}
+
+#start {
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #f73614;
+}
+
+#pause {
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #0aa583;
+}
+
+#record {
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #f79514;
+}
+
+#reset {
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    background-color: #23b310;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#labs {
+    text-align: left;
+}

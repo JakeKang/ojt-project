@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Korea Weahter Web</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+  </head>
+  <body>
+    <section id="container">
+      <div id="cardTop">
+        <span id="location">데이터를 불러오는 중입니다.</span>
+      </div>
+      <div id="cardMain">
+        <img id ="weatherImg" src=""/>
+        <p id="weather"></p>
+        <p id="temp"><p id="celsius"></p></p>
+      </div>
+      <ui id="cardBottom">
+        <li id="humidity"></li>
+        <li id="windSpeed"></li>
+        <li id="precipitation"></li>
+      </ui>
+      <span id="updating"></span>
+      <button id="refresh">업데이트</button>
+    </section>
+    <script src="weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#docker-compose의 버전을 명시. 버전별로 명령어등의 약간의 차이가 있다.
+version: "2"
+
+services:
+    redis-server:
+        image: "redis"
+        command: redis-server --port 6379
+        ports:
+            - 6379:6379
+    node-app:
+        build: .
+        ports:
+            - "3000:3000"

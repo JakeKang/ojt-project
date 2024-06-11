@@ -1,0 +1,71 @@
+/* Basic Style */
+body {
+  background: #fff;
+  color: #333;
+}
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0;
+}
+
+#add-button {
+  border: 0px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #999;
+}
+
+.add-section {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.add-section > label {
+  font-weight: bold;
+  margin-bottom : 50px;
+  padding-right : 330px;
+  padding-bottom : 5px;
+  border-bottom: 2px solid black;
+}
+
+#root > h3 {
+  font-weight: bold;
+  padding-bottom : 5px;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+
+.add-section > button {
+  margin: 32px 0px 32px 10px;
+}
+
+#new-task {
+  width: 330px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  margin-top: 25px;
+  float: left;
+}
+
+
+#incomplete-tasks {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#incomplete-tasks > li {
+  list-style-type: none;
+  padding: 20px 5px 20px 5px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+#deleteBtn {
+  border: 0px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #999;
+  float: right;
+}
+

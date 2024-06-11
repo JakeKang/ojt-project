@@ -1,0 +1,38 @@
+{
+  "name": "korea-weather-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TestProject #1 - Korea Weather Web",
+  "scripts": {
+    "build": "yarn lint;babel ./src -d ./build",
+    "start": "yarn build;node ./build/index.js",
+    "dev": "nodemon --exec 'eslint src --color && babel-node ./src'",
+    "lint": "eslint src --color",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "puppeteer": "^5.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn test"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": ">= 10.15.0"
+  }
+}

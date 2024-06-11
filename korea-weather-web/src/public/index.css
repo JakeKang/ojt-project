@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(-45deg, #EE7752, #d6a53c, #23A6D5, #23D5AB);
+  background-size: 300% 300%;
+  animation: change 30s ease-in-out infinite;
+}
+
+span {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  color: #fff;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 350px;
+  height: 450px;
+  text-align: left;
+  background-color: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius : 10px;
+}
+
+#cardTop {
+  top: 0;
+}
+
+#cardMain {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  left: 7%;
+  top: 25%;
+}
+
+#location {
+  position: relative;
+  font-size: 24px;
+  left: 10px;
+  top: 10px;
+}
+
+#weather {
+  font-size: 32px;
+}
+
+#temp {
+  display: inline;
+  font-size: 64px;
+}
+
+#celsius {
+  display: inline;
+  font-size: 32px;
+  vertical-align: top;
+}
+
+#cardBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  color: #fff;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#cardBottom > li {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#updating {
+  position: absolute;
+  font-size : 12px;
+  right: 5px;
+  bottom: 45px;
+}
+
+#refresh {
+  position: absolute;
+  border : 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#refresh:hover {
+  cursor: pointer;
+  background-color: #5eaadd;
+}
+
+#refresh:focus {
+  outline: none;
+}
+
+#updatePopup {
+  position: absolute;
+  font-size: 10px;
+  bottom: 45px;
+  right: 15px;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
